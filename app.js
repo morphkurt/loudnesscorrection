@@ -34,7 +34,7 @@ app.get('/*.aac', (req, res) => {
             console.log('an error happened: ' + err.message);
 	    res.end();
         })
-	.outputOptions(['-copyts','-muxdelay 0','-write_id3v2 1','-map_metadata:s:a 0:s:a'])
+	.outputOptions(['-muxdelay 0','-write_id3v2 1','-map_metadata:s:a 0:s:a'])
         .pipe(res, {end: true})
 });
 
