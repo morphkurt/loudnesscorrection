@@ -14,8 +14,7 @@ app.get('/*.aac', (req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
     res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-    res.setHeader('Access-Control-Allow-Credentials', true);
-
+    res.setHeader('Access-Control-Allow-Credentials', true)
     res.setHeader('Last-Modified', (new Date()).toUTCString());
     res.setHeader('Cache-Control', 'max-age=3600');
     res.contentType('audio/x-aac');
