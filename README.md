@@ -29,6 +29,12 @@ The Alexa [Documentation](https://developer.amazon.com/docs/flashbriefing/normal
 
 This is an express / fluent-ffmpeg and http-proxy node script to intecept audio (can be extended to video) and increases the audio levels to Alexa recommended levels.
 
+# Spectrograms
+
+![alt text](https://raw.githubusercontent.com/morphkurt/loudnesscorrection/master/img/spectrogram_pre.png | width=100 "Pre Loudness Filter")
+![alt text](https://raw.githubusercontent.com/morphkurt/loudnesscorrection/master/img/spectrogram_post.png | width=100 "Post Loudness Filter")
+
+
 # Learnings
 
 * The libfdk_aac audio encoder introduced some gaps in the audio playback, FFmpeg default aac encoder seems to handle gaps better.
