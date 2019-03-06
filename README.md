@@ -1,5 +1,19 @@
 # Normalizing the Loudness of Audio Content via HLS proxy server
 
+~~~~
++---------+      +----------+     +------+       +------+
+| Audio   |      | HLS      |     | CDN  |       | User |
+| Encoder +----->+ Packager +---->+      +------>+      |
++---------+      +----------+     +---+--+       +------+
+                                      | Intercepts *aac
+                                      | Bypass *.m3u8
+                                      v
+                                +-----+----+    +------+       +------+
+                                | Loudness |    | CDN  |       | User |
+                                | Proxy    +--->+      +------>+      |
+                                +----------+    +------+       +------+
+~~~~
+
 When creating Alexa apps you are required to set audio loudness levels to satisfy following requirments.
 
 * Program loudness for Alexa should average -14 dB LUFS/LKFS.
