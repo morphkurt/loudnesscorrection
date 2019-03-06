@@ -31,8 +31,11 @@ This is an express / fluent-ffmpeg and http-proxy node script to intecept audio 
 
 # Spectrograms
 
-<a><img src="https://raw.githubusercontent.com/morphkurt/loudnesscorrection/master/img/spectrogram_pre.png" width="400">Pre Loudness Filter</a>
-<a><img src="https://raw.githubusercontent.com/morphkurt/loudnesscorrection/master/img/spectrogram_post.png" width="400">Post Loudness Filter</a>
+
+## Pre Loudness Filter
+<a><img src="https://raw.githubusercontent.com/morphkurt/loudnesscorrection/master/img/spectrogram_pre.png" width="400"></a>
+## Post Loudness Filter
+<a><img src="https://raw.githubusercontent.com/morphkurt/loudnesscorrection/master/img/spectrogram_post.png" width="400"></a>
 
 
 # Learnings
